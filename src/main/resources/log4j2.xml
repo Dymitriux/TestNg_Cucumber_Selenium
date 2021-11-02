@@ -9,8 +9,9 @@
         <Root level="DEBUG">
             <AppenderRef ref="Console"/>
         </Root>
-        <logger name="org.apache" level="ERROR" />
-        <logger name="httpclient" level="ERROR" />
-        <logger name="io.github.bonigarcia.wdm" level="INFO" />
+        <!--HTTP/HTTPS logs from selenium 4 and WebDriverManager limitation to INFO level-->
+        <logger name="io.github.bonigarcia.wdm" level="INFO"/>
+        <logger name="io.netty" level="INFO"/>
+        <logger name="org.asynchttpclient" level="INFO"/>
     </Loggers>
 </Configuration>
