@@ -15,9 +15,9 @@ public class WebDriverUtils {
         return driver;
     }
 
-    public static void getChromeDriver() {
+    private static void getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("disable-popup-blocking");
+        options.addArguments("disable-popup-blocking", "--start-maximized");
         driver = new ChromeDriver(options);
     }
 
